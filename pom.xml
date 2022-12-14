@@ -27,6 +27,8 @@
     <modules>
         <module>client-service</module>
         <module>eureka-server</module>
+        <module>item-service</module>
+        <module>libs</module>
     </modules>
 
     <dependencyManagement>
