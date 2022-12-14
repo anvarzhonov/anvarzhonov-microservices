@@ -1,6 +1,10 @@
 package ru.anvarzhonov.clientservice.services;
 
 import ru.anvarzhonov.clientservice.entity.ClientEntity;
+import ru.anvarzhonov.dto.ItemDto;
+import ru.anvarzhonov.exception.BusinessException;
+
+import java.util.List;
 
 /**
  * todo Document type ClientService
@@ -9,4 +13,6 @@ import ru.anvarzhonov.clientservice.entity.ClientEntity;
  */
 public interface ClientService {
     ClientEntity searchClient(Integer clientId);
+
+    List<ItemDto> getClientItems(Integer clientId) throws BusinessException;
 }
